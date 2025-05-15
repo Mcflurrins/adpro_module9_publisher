@@ -6,4 +6,5 @@ My publisher program sends five messages to the message broker in one run. Each 
 
 The URL “amqp://guest:guest@localhost:5672” in the publisher program specifies the connection details for the message broker. If the subscriber program uses the same URL, it means both the publisher and subscriber are connecting to the same message broker instance running locally on my machine (localhost) at port 5672, with username “guest” and password “guest.” This shared connection means the publisher can send messages to the broker, and the subscriber can receive those messages.
 
+![image](https://github.com/user-attachments/assets/5082916b-cab1-43d4-ba12-391f9f970931)
 

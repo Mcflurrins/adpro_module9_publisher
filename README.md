@@ -8,3 +8,7 @@ The URL “amqp://guest:guest@localhost:5672” in the publisher program specifi
 
 ![image](https://github.com/user-attachments/assets/5082916b-cab1-43d4-ba12-391f9f970931)
 
+![image](https://github.com/user-attachments/assets/6bd87531-90fa-4901-85b3-08ca247e4440)
+![image](https://github.com/user-attachments/assets/8fe931bc-cd25-48e4-88dc-a84c03812b09)
+When I run `cargo run` in publisher, it connects to the RabbitMQ message broker and sends five `UserCreatedEventMessage` messages, each with a different user, to the `user_created` queue. When I run the subscriber folder, it connects to the same RabbitMQ broker, listens to the `user_created` queue, and prints out each message it receives. As a result, every time the publisher sends messages, the subscriber receives and displays them, showing the user information for each event.
+

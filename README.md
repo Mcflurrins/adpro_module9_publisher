@@ -12,3 +12,5 @@ The URL “amqp://guest:guest@localhost:5672” in the publisher program specifi
 ![image](https://github.com/user-attachments/assets/8fe931bc-cd25-48e4-88dc-a84c03812b09)
 When I run `cargo run` in publisher, it connects to the RabbitMQ message broker and sends five `UserCreatedEventMessage` messages, each with a different user, to the `user_created` queue. When I run the subscriber folder, it connects to the same RabbitMQ broker, listens to the `user_created` queue, and prints out each message it receives. As a result, every time the publisher sends messages, the subscriber receives and displays them, showing the user information for each event.
 
+![image](https://github.com/user-attachments/assets/01a8db6c-002e-4129-a135-ffca10a39925)
+The graph shows the message rates per minute as spikes in the charts, so in the first spike, I ran `cargo run` three times in quick succession, and then the secocnd spike is lower because I only ran that command one more time.
